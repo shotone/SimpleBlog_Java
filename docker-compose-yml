@@ -1,0 +1,25 @@
+version: "3"
+services:
+
+  blog:
+    container_name: blog
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./data/blog_storage:/usr/src/app/storage
+    image: registry.gitlab.com/nelbakidze/tg-containers:tg-bls-1.0-SNAPSHOT
+    env_file:
+      - .composer.env
+
+    ports:
+      - ${PORT}:${PORT}
+    deploy:
+        resources:
+            limits:
+              memory: "4096M"
+            reservations:
+              memory: "1024M"
+
+
+volumes:
+  blog_storage:
+    driver: local
