@@ -62,7 +62,7 @@ Start the application:
 ```
 
 5. Access the application:
-Once the application has started, you can access it at http://localhost:8080 in your web browser.
+Once the application has started, you can access it at http://localhost:8082 in your web browser.
 
 ## Usage
 The SimpleBlog_Java project provides a simple blogging platform with basic functionalities. Users can perform actions such as creating blog posts, managing their own posts, and viewing posts by other users. The project serves as a starting point for beginners to explore and enhance the features according to their learning goals.
